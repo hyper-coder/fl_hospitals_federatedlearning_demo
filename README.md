@@ -1,4 +1,8 @@
 
+DISCLAIMER: THIS REPOSITORY IS PROVIDED FOR EDUCATIONAL PURPOSES ONLY. USE AT YOUR OWN RISK. THE AUTHOR IS 
+NOT RESPONSIBLE FOR ANY DAMAGE OR LOSS CAUSED BY USING THE CODE. DO NOT USE THIS CODE FOR PRODUCTION ENVIRONMENTS 
+OR WITH REAL DATA WITHOUT PROPER VALIDATION AND TESTING.
+
 About This Demo
 
 This demo showcases a simplified simulation of a federated learning system applied to healthcare. Instead of aggregating raw patient data in a central location, each hospital 
