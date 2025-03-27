@@ -16,4 +16,4 @@ The model you are using here was trained using weights from 3 different "hospita
 ⚠️ This is a conceptual demo built for educational purposes only. The model uses synthetic data and does not reflect actual medical diagnostics.
 
 
-(c) 2025 The Small Wall Podcast Srikanth Devarajan. 
+(c) 2025 The Small Wall Podcast - Srikanth Devarajan. 
