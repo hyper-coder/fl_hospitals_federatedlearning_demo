@@ -1,0 +1,22 @@
+.
+├── aggregator
+│   └── server.py                        # Main server file for the aggregator. Handles the uploading of model weights from hospitals and performs federated learning aggregation. 
+├── data
+│   ├── hospital_1_patients.csv           # Synthetic patient data for Hospital 1 (used for local model training).
+│   ├── hospital_2_patients.csv           # Synthetic patient data for Hospital 2 (used for local model training).
+│   └── hospital_3_patients.csv           # Synthetic patient data for Hospital 3 (used for local model training).
+├── demo
+│   └── demo_federated_learning.py        # Script for running a demo of federated learning with synthetic data and models.
+├── hospitals
+│   ├── hospital_1.py                     # Python script for Hospital 1. Handles local model training, weight extraction, and saving model weights.
+│   ├── hospital_2.py                     # Python script for Hospital 2. Handles local model training, weight extraction, and saving model weights.
+│   └── hospital_3.py                     # Python script for Hospital 3. Handles local model training, weight extraction, and saving model weights.
+├── models
+│   ├── global_model.pth                  # The aggregated global model generated after federated learning aggregation. Represents a combination of the knowledge from all hospitals.
+│   ├── hospital_1_weights.pth            # Model weights for Hospital 1 after local training.
+│   ├── hospital_2_weights.pth            # Model weights for Hospital 2 after local training.
+│   └── hospital_3_weights.pth            # Model weights for Hospital 3 after local training.
+├── patient_demo_app.py                   # Flask app that demonstrates using the aggregated model to predict diabetes risk based on patient inputs.
+└── templates
+    └── index.html                        # HTML template for the frontend of the patient demo app. Displays the user interface for patient input and risk prediction.
+    

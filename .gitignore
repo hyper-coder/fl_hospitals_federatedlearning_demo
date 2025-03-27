@@ -1,0 +1,5 @@
+# Ignore demo/fed_learning_env
+demo/fed_learning_env/
+
+# Ignore fed_learning_env
+fed_learning_env/

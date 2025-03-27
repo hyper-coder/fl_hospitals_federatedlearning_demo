@@ -1,0 +1,13 @@
+	  To Demo federated learning - 
+      This will create 3 models and produce weights which will then used to predict via  patient_demo_app.py 
+        python3 demo_federated_learning.py 
+
+    
+    Patient Demo App:
+        Activate Virtual Environment: source fed_learning_env/bin/activate
+        python3 patient_demo_app.py 
+
+
+
+
+-> The Small Wall podcast 2025 (c)

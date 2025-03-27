@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Federated Learning POC - Demo App - File Structure</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 40px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #6a0dad;
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      .tree {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #555;
+        margin-left: 20px;
+      }
+
+      .file {
+        margin-bottom: 10px;
+      }
+
+      .file-name {
+        font-weight: bold;
+        color: #333;
+        margin-left: 50px;
+      }
+
+      .folder-name {
+        font-weight: bold;
+        color: #6a0dad; /* Folder names in purple for distinction */
+      }
+
+      .folderdescription {
+        margin-left: 0px;
+        color: #c30cab;
+        font-style: italic;
+        font-size: 14px;
+        font-family: monospace;
+      }
+      .description {
+        color: #777;
+        font-style: italic;
+        font-size: 16px;
+        margin-left: 50px;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 14px;
+        color: #777;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Federated Learning POC - Project Structure</h1>
+
+      <div class="tree">
+        <div class="file">
+          <span class="folder-name">aggregator/</span>
+          <div class="folderdescription">
+            Contains the server responsible for managing federated learning,
+            receiving model weights from hospitals, and aggregating them to form
+            the global model.
+          </div>
+          <div class="file">
+            <span class="file-name">server.py</span>
+            <div class="description">
+              Handles the uploading of model weights and aggregation process to
+              generate the global model using federated learning.
+            </div>
+          </div>
+        </div>
+
+        <div class="file">
+          <span class="folder-name">data/</span>
+          <div class="folderdescription">
+            Contains the CSV files with the hospital patient data used for local
+            training.
+          </div>
+          <div class="file">
+            <span class="file-name">hospital_1_patients.csv</span>
+            <div class="description">
+              Data for Hospital 1, including patient details like age, glucose
+              levels, and medical history.
+            </div>
+          </div>
+          <div class="file">
+            <span class="file-name">hospital_2_patients.csv</span>
+            <div class="description">
+              Data for Hospital 2, formatted similarly to Hospital 1.
+            </div>
+          </div>
+          <div class="file">
+            <span class="file-name">hospital_3_patients.csv</span>
+            <div class="description">
+              Data for Hospital 3, structured like the other hospitals.
+            </div>
+          </div>
+        </div>
+
+        <div class="file">
+          <span class="folder-name">demo/</span>
+          <div class="folderdescription">
+            Contains the demo file to simulate the federated learning process
+            and test the predictions.
+          </div>
+          <div class="file">
+            <span class="file-name">demo_federated_learning.py</span>
+            <div class="description">
+              Runs the demo for federated learning, simulating model training
+              and predictions using the aggregated model.
+            </div>
+          </div>
+        </div>
+
+        <div class="file">
+          <span class="folder-name">hospitals/</span>
+          <div class="folderdescription">
+            Contains scripts for training models on local hospital data and
+            extracting model weights.
+          </div>
+          <div class="file">
+            <span class="file-name">hospital_1.py</span>
+            <div class="description">
+              Script for training a model on Hospital 1's data and extracting
+              the model weights.
+            </div>
+          </div>
+          <div class="file">
+            <span class="file-name">hospital_2.py</span>
+            <div class="description">
+              Script for training a model on Hospital 2's data and extracting
+              the model weights.
+            </div>
+          </div>
+          <div class="file">
+            <span class="file-name">hospital_3.py</span>
+            <div class="description">
+              Script for training a model on Hospital 3's data and extracting
+              the model weights.
+            </div>
+          </div>
+        </div>
+
+        <div class="file">
+          <span class="folder-name">models/</span>
+          <div class="folderdescription">
+            Contains the model weights for each hospital as well as the global
+            model after aggregation.
+          </div>
+          <div class="file">
+            <span class="file-name">global_model.pth</span>
+            <div class="description">
+              The global model that represents the aggregated knowledge from all
+              hospitals.
+            </div>
+          </div>
+          <div class="file">
+            <span class="file-name">hospital_1_weights.pth</span>
+            <div class="description">Model weights for Hospital 1.</div>
+          </div>
+          <div class="file">
+            <span class="file-name">hospital_2_weights.pth</span>
+            <div class="description">Model weights for Hospital 2.</div>
+          </div>
+          <div class="file">
+            <span class="file-name">hospital_3_weights.pth</span>
+            <div class="description">Model weights for Hospital 3.</div>
+          </div>
+        </div>
+
+        <div class="file">
+          <span class="file-name">patient_demo_app.py</span>
+          <div class="description">
+            A demo app to show how the aggregated model can be used for making
+            predictions based on user input.
+          </div>
+        </div>
+
+        <div class="file">
+          <span class="folder-name">templates/</span>
+          <div class="folderdescription">
+            Contains the HTML template used to display the demo app.
+          </div>
+          <div class="file">
+            <span class="file-name">index.html</span>
+            <div class="description">
+              HTML template for the user interface of the patient demo app.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          © 2024 The Small Wall — Federated Learning Demo. Built for
+          privacy-first AI!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
