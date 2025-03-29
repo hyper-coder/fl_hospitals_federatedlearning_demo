@@ -22,5 +22,6 @@ In my (The Small Wall Podcast) podcast Episode #2 - I explore how federated lear
 
 Note: This demo is for educational purposes only and uses synthetic data.
 
+![Screenshot 2025-03-29 at 6 31 12 AM](https://github.com/user-attachments/assets/06179672-5092-4239-aec0-b196e65a7e27)
 
 (c) 2025 The Small Wall Podcast - Srikanth Devarajan. 
