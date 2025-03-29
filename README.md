@@ -24,4 +24,8 @@ Note: This demo is for educational purposes only and uses synthetic data.
 
 ![Screenshot 2025-03-29 at 6 31 12 AM](https://github.com/user-attachments/assets/06179672-5092-4239-aec0-b196e65a7e27)
 
+
+![Screenshot 2025-03-29 at 6 32 34 AM](https://github.com/user-attachments/assets/4dc64e5d-013d-4c72-b110-39428613ca40)
+
+
 (c) 2025 The Small Wall Podcast - Srikanth Devarajan. 
