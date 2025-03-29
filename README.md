@@ -16,6 +16,10 @@ Key Architectural Features:
 This architectural approach drives operational efficiency and enhances diagnostic capabilities through collaborative learning, and also establishes a blueprint for leveraging advanced AI in privacy-sensitive sectors like healthcare, finance, and government.
 
 
+
+
+In my (The Small Wall Podcast) podcast Episode #2 - I explore how federated learning.  Watch it now on YouTube:  https://youtu.be/dErkmQxpr6I 
+
 Note: This demo is for educational purposes only and uses synthetic data.
 
 
