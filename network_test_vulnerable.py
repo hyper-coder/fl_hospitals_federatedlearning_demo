@@ -11,5 +11,8 @@ def ping_site():
     print(f"Pinging {target}...")
     subprocess.call("ping -c 1 " + target, shell=True)
 
+
+# trigger
+
 if __name__ == "__main__":
     ping_site()
